@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CLionExternalBuildManager">
+    <target id="8a356bf4-ce91-4b84-8c72-9880905fff99" name="PrimeNumberCalculator" defaultType="TOOL">
+      <configuration id="a5364f21-1e22-4745-a817-349795391fd0" name="PrimeNumberCalculator" toolchainName="Visual Studio">
+        <build type="TOOL">
+          <tool actionId="Tool_External Tools_PrimeNumberCalculator" />
+        </build>
+        <clean type="TOOL">
+          <tool actionId="Tool_External Tools_PrimeNumberCalculator" />
+        </clean>
+      </configuration>
+    </target>
+  </component>
+</project>

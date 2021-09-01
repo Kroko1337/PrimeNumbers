@@ -1,7 +1,7 @@
-use std::env::var;
 use std::alloc::System;
-use std::time::SystemTime;
 use std::collections::LinkedList;
+use std::env::var;
+use std::time::SystemTime;
 
 fn main() {
     let prime_number_amount = 50;
@@ -15,7 +15,7 @@ fn main() {
         current += 1;
         let mut is_prime_number = true;
         let mut factors = 0;
-        for i in 1 .. current {
+        for i in 1..current {
             if current % i == 0 {
                 factors += 1;
                 if factors >= 2 {
@@ -30,4 +30,3 @@ fn main() {
         }
     }
 }
-
