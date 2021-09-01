@@ -4,29 +4,29 @@ use std::time::SystemTime;
 use std::collections::LinkedList;
 
 fn main() {
-    let primeNumberAmount = 50;
+    let prime_number_amount = 50;
 
-    let mut primeNumbers = LinkedList::new();
-    let initTime = SystemTime::now();
+    let mut prime_numbers = LinkedList::new();
+    let init_time = SystemTime::now();
 
     let mut current = 1;
 
-    while primeNumbers.len() != primeNumberAmount {
+    while prime_numbers.len() != prime_number_amount {
         current += 1;
-        let mut isPrimeNumber = true;
+        let mut is_prime_number = true;
         let mut factors = 0;
         for i in 1 .. current {
             if current % i == 0 {
                 factors += 1;
                 if factors >= 2 {
-                    isPrimeNumber = false;
+                    is_prime_number = false;
                     break;
                 }
             }
         }
-        if isPrimeNumber {
+        if is_prime_number {
             println!("{}", current);
-            primeNumbers.push_front(current);
+            prime_numbers.push_front(current);
         }
     }
 }
