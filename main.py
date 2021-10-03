@@ -1,5 +1,6 @@
 if __name__ == '__main__':
-    primeNumberSize = 1000
+    primeNumberSize = int(input("How mush prime numbers do you want?\n"))
+    print("Generate", primeNumberSize, "prime numbers:\n")
     primeNumbers = []
     current = 1
     while len(primeNumbers) < primeNumberSize:
